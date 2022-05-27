@@ -1,0 +1,974 @@
+/* START General Rules*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Roboto Condensed,sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #000;
+    text-align: left;
+    background-image: url(https://via.placeholder.com/1600x800);
+    background-attachment: fixed;
+}
+/* END General Rules*/
+
+.navbar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header-container{
+    position: relative;
+    width: 67.5%;
+    left: 18.8%;
+    right: 15%;
+    top: 15.9%;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.QN-image-first-container{
+    position: relative;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    border-top: 1px solid rgb(225, 225, 225);
+}
+
+.QN-image-second-container{
+    position: relative;
+    left: 40%;
+}
+
+.first-menu-container{
+    display: flex;
+    position: relative;
+    padding: 20px 10px 20px 10px;
+    justify-content: space-between;
+    background-color: rgb(0, 90, 199);
+    border-bottom: 2px solid rgb(2, 80, 176);
+    min-height: 44px;
+    max-height: 44px;
+}
+
+
+.three-elements li,.two-elements li{
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+.abbonati{
+    color: rgb(0, 90, 199);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.abbonati:hover,.acquista:hover{
+    text-decoration: underline;
+}
+
+.accedi{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+    border-right: 1px solid rgb(225, 225, 225);
+}
+
+
+.acquista{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+}
+
+
+.hamburger-menu{
+    background: url(https://www.ilrestodelcarlino.it/icons/hamburger-menu.svg);
+    display: inline;
+    font-size: 1.25em;
+    color: rgb(31, 31, 31);
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    border: 0;
+    margin: 0 auto 0 0;
+    position: relative;
+    top: 4.2px;
+}
+
+.search-button {
+    background: url(https://www.ilrestodelcarlino.it/icons/search.svg);
+    font-size: 1.25em;
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    border: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+    position: relative;
+    bottom: 4px;
+}
+
+.search-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.right-arrow{
+    background: url(https://www.ilrestodelcarlino.it/icons/freccia_abbonati.svg);
+    font-size: 1.25em;
+    color: rgb(31, 31, 31);
+    height: 21px;
+    width: 20px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+}
+
+.logo-container{
+    height: 50px;
+    aspect-ratio: auto 750 / 50;
+    width: 750px;
+}
+
+.logo-temperature-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid rgb(225, 225, 225);
+    margin-top: 34px;
+}
+
+.temperature{
+    width: fit-content;
+    margin: 1rem auto;
+}
+
+.position-symbol{
+    display: inline-block;
+    font-size: 1.25em;
+    color: rgb(31, 31, 31);
+    width: 0.43em;
+    height: 0.6em;
+}
+
+.città{
+    color: rgb(219, 0, 73);
+    text-decoration: none;
+    margin-right: 129.625px;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+}
+
+.cronaca {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.sport {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.cosa-fare {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.politica{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.economia {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.cultura {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.spettacoli {
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.speciali{
+    color: rgb(31, 31, 31);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "STIX Two Text", serif;
+    font-size: 16px;
+    line-height: 12px;
+    letter-spacing: -0.2px;
+    padding: 9.6px 8px 9.6px 8px;
+}
+
+.second-menu-container{
+    padding: 6px 15px 6px 15px;
+    height: 44px;
+    background-color: rgb(0, 90, 199);
+}
+
+.position-symbol-container{
+    display: inline-block;
+    position: relative;
+    top: 8px;
+    cursor: pointer;
+}
+
+.down-arrow{
+    background-image: url(https://www.ilrestodelcarlino.it/icons/menu-altre-arrow.svg);
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.third-menu-container{
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.08;
+    text-align: center;
+    max-height: 44px;
+    padding-left: 15px;
+    align-items: stretch;
+    justify-content: flex-start;
+    background-color: rgb(233, 243, 255);
+}
+
+.third-menu-item{
+    color: rgb(0, 90, 199);
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.08;
+    text-align: center;
+    max-height: 44px;
+    padding: 14.4px 8px 14.4px 8px;
+    text-decoration: none;
+}
+
+.third-menu-item:hover{
+    color: #004395;
+}
+
+.wrapper{
+    background-color: #fff;
+    position: relative;
+    width: 67.5%;
+    left: 18.8%;
+    right: 15%;
+    top: 15%;
+}
+
+.adv-container{
+    height: 116px;
+    padding-top: 4px;
+    margin-bottom: 4px;
+    z-index: 100;
+    box-sizing: border-box;
+}
+
+.double-column-container{
+    clear: both;
+    position: relative;
+    padding-top: 10px;
+}
+
+.main-column-container{
+    width: 660px;
+    max-width: 100%;
+    float: left;
+}
+
+.article-image{
+    position: relative;
+    max-height: 371px;
+    overflow: hidden;
+}
+
+.article-text{
+    padding: 16px 15px 0 15px;
+}
+
+.article-subject{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #005ac8;
+    font-weight: 700;
+}
+
+.article-title{
+    font-family: Roboto Condensed,sans-serif;
+    font-weight: 700;
+    margin: 15px 0;
+}
+
+.title{
+    font-size: 44px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.abstract{
+    font-size: 20px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 15px;
+    font-family: Roboto slab,serif;
+}
+
+.link-title{
+    text-decoration: none;
+    color: #000;
+}
+
+.link-title:hover{
+    color: #6B7280;
+}
+
+.article-footer{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 13px;
+}
+
+.related-articles{
+    margin: 10px 0;
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related-article{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-left: 0;
+    margin-bottom: 5px;
+    font-family: Roboto slab,serif;
+}
+
+.article-label{
+    font-weight: 700;
+    color: #005ac8;
+    margin-right: 5px;
+}
+
+.related-text{
+    color: #393939;
+}
+
+.related-article:hover{
+    text-decoration: underline;
+}
+
+.related-text:hover{
+    color: #005ac8;
+}
+
+.side-column-container{
+    position: static;
+    width: 300px;
+    display: block;
+    vertical-align: baseline;
+    float: left;
+}
+
+.sidebar-group{
+    margin-bottom: 20px;
+}
+
+.sidebar-group-title{
+    margin-bottom: 10px;
+    font-size: 18px;
+    float: left;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sidebar-group-title-bar{
+    width: 150px;
+    height: 3px;
+    background-color: #005ac8;
+    content: "";
+    clear: both;
+}
+
+.side-article-image{
+    position: relative;
+    min-height: 120px;
+    max-height: 371px;
+}
+
+.side-article-text{
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+.side-article-subject{
+    padding-top: 0;
+    padding-bottom: 5px;
+    margin-bottom: -15px;
+    padding-left: 0;
+}
+
+.side-article-subject{
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #005ac8;
+    font-weight: 700;
+}
+
+.side-article-title{
+    margin: 5px 0 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.side-article-abstract{
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 26px;
+    padding-bottom: 2px;
+}
+
+.side-article-title:hover{
+    color: #6B7280;
+}
+
+.footer{
+    z-index: 2;
+    position: relative;
+    top: 15%;
+    clear: both;
+}
+
+.first-half-footer{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(0, 90, 199);
+    background-image: url(https://www.ilrestodelcarlino.it/images/logos/QN_cerchio.svg);
+    background-repeat: no-repeat;
+}
+
+.footer-logo{
+    column-gap: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.robin-srl{
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.21px;
+    color: rgb(255, 255, 255);
+    margin: 2px 5px 2px 0px;
+}
+
+.diritti-società{
+    display: flex;
+    justify-content: center;
+}
+
+.società{
+    font-family: Inter, sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: rgb(255, 255, 255);
+    margin: 2px 0px;
+}
+
+.monrif{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.monrif:hover{
+    text-decoration: underline;
+}
+
+.footer-links-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links{
+    display: grid;
+    grid-template-columns: 138px 138px;
+    justify-content: space-between;
+    gap: 12px;
+
+}
+
+.footer-link{
+    text-decoration: none;
+}
+
+.other-links-container{
+    display: flex;
+    justify-content: center;
+}
+
+.other-links{
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 43px;
+}
+
+.categorie{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    letter-spacing: 0.4px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.column-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-columns: max-content;
+    grid-auto-flow: column;
+    column-gap: 43px;
+}
+
+.contatti{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.contatti:hover{
+    text-decoration: underline;
+}
+
+.lavora{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.lavora:hover{
+    text-decoration: underline;
+}
+
+.concorsi {
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.concorsi:hover{
+    text-decoration: underline;
+}
+
+.abbonamenti{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    letter-spacing: 0.4px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.digitale{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.digitale:hover{
+    text-decoration: underline;
+}
+
+.cartaceo{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.cartaceo:hover{
+    text-decoration: underline;
+}
+
+.offerte{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.offerte:hover{
+    text-decoration: underline;
+}
+
+.pubblicità{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    letter-spacing: 0.4px;
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.speed{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.speed:hover{
+    text-decoration: underline;
+}
+
+.network{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.network:hover{
+    text-decoration: underline;
+}
+
+.annunci{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.annunci:hover{
+    text-decoration: underline;
+}
+
+.aste{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.aste:hover{
+    text-decoration: underline;
+}
+
+.codici{
+    color: #fff;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.codici:hover{
+    text-decoration: underline;
+}
+
+.second-half-footer{
+    padding: 0px 15px;
+    background-color: rgb(2, 80, 176);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.copyright{
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    font-size: 11px;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.33);
+    margin-left: 30px;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 8px;
+}
+
+.dati{
+    color: #fff;
+    text-decoration: none;
+}
+
+.dati:hover{
+    text-decoration: underline;
+}
+
+.issn{
+    color: #fff;
+    text-decoration: none;
+}
+
+.issn:hover{
+    text-decoration: underline;
+}
+
+.privacy{
+    color: #fff;
+    text-decoration: none;
+}
+
+.privacy:hover{
+    text-decoration: underline;
+}
+
+.impostazioni{
+    color: #fff;
+}
+
+.bell-button{
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    cursor: pointer;
+}
+
+.bell{
+    border-radius: 100%;
+}
+
+@media (min-width: 768px){
+    .footer-links{
+        grid-template-columns: repeat(auto-fill, minmax(129px, 1fr));
+    }
+    .second-half-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 4px;
+        padding-bottom: 6px;
+    }
+    .first-menu-container{
+        background-color: rgb(255, 255, 255);
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .second-menu-container{
+        background-color: rgb(255, 255, 255);
+    }
+    .adv-container{
+        height: 260px;
+        padding-top: 0;
+        margin-bottom: 6px;
+        width: calc(100% + 12px);
+        margin-left: -6px;
+        text-align: center;
+    }
+    .double-column-container{
+        display: flex;
+        margin-left: 20px;
+    }
+    .main-column-container{
+        margin-right: 20px;
+    }
+    .first-half-footer{
+        padding-left: calc(636px - 62.11vw);
+        padding-top: 22px;
+        padding-bottom: 32px;
+    }
+    .footer-links{
+        grid-template-columns: repeat(auto-fill, minmax(129px, 1fr));
+    }
+}
+
+@media (min-width: 1024px){
+    .other-links{
+        column-gap: 32px;
+    }
+    .column-grid{
+        column-gap: 32px;
+    }
+    .first-menu-container{
+        min-height: 61px;
+    }
+    .second-menu-container{
+        padding: 0px 15px;
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .third-menu-container{
+        padding-left: 0px;
+        justify-content: center;
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 90, 199);
+        border-bottom: 1px solid rgb(225, 225, 225);
+    }
+    .first-half-footer{
+        padding-left: calc(650px - 50.78vw);
+        padding-top: 43px;
+    }
+    .first-article{
+        clear: both;
+    }
+    .second-article{
+        clear: both;
+    }
+    .third-article{
+        clear: both;
+    }
+}
+
+@media (min-width: 370px){
+    .diritti-società{
+        white-space: nowrap;
+    }
+}
